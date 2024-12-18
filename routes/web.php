@@ -15,3 +15,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+Route::get('/promociones', function () {
+    return view('promociones.index');
+})->name('promociones.index');
