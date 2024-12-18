@@ -138,9 +138,9 @@
         <nav class="custom-menu">
             <a href="{{ route('index.index') }}" class="custom-menu-btn">Inicio</a>
             <a href="#" class="custom-menu-btn">Carta</a>
-            <a href="{{ route('promociones.index') }}" class="custom-menu-btn">Promociones</a>
-            <a href="#" class="custom-menu-btn">Delivery</a>
-            <a href="" class="custom-menu-btn">Reserva</a>
+            <a href="#" class="custom-menu-btn">Promociones</a>
+            <a href="{{ route('delivery.index') }}" class="custom-menu-btn">Delivery</a>
+            <a href="{{ route('Reserva.index') }}" class="custom-menu-btn">Reserva</a>
 
             <!-- Usuario -->
             <?php if (isset($_SESSION['nombre'])): ?>

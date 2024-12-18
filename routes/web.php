@@ -17,19 +17,16 @@ Route::middleware([
 });
 
 Route::get('/index', function () {
-    return view('index.index'); 
+    return view('index.index');
 })->name('index.index');
 
-Route::get('/promociones', function () {
-    return view('promociones.index');
-})->name('promociones.index');
+
 
 Route::get('/delivery', function () {
-    return view('delivery.index'); 
+    return view('delivery.index');
 })->name('delivery.index');
 
 /* reservas  */
 Route::get('/Reserva', function () {
-    return view('Reserva.index'); 
+    return view('Reserva.index');
 })->name('Reserva.index');
-
