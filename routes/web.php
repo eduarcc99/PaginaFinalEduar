@@ -27,3 +27,9 @@ Route::get('/promociones', function () {
 Route::get('/delivery', function () {
     return view('delivery.index'); 
 })->name('delivery.index');
+
+/* reservas  */
+Route::get('/Reserva', function () {
+    return view('Reserva.index'); 
+})->name('Reserva.index');
+
