@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,3 +34,14 @@ Route::get('/delivery', function () {
 Route::get('/Reserva', function () {
     return view('Reserva.index');
 })->name('Reserva.index');
+Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/promotions', [PageController::class, 'promotions'])->name('promotions');
+Route::get('/reservation', [PageController::class, 'reservationForm'])->name('reservation.form');
+
+
+
+
+
+Route::get('/confirmacion', function () {
+    return view('confirmacion.confirmacion');
+})->name('confirmacion.confirmacion');
