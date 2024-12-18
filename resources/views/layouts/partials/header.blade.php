@@ -136,7 +136,7 @@
         </div>
 
         <nav class="custom-menu">
-            <a href="#" class="custom-menu-btn">Inicio</a>
+            <a href="{{ route('index.index') }}" class="custom-menu-btn">Inicio</a>
             <a href="#" class="custom-menu-btn">Carta</a>
             <a href="{{ route('promociones.index') }}" class="custom-menu-btn">Promociones</a>
             <a href="#" class="custom-menu-btn">Delivery</a>
