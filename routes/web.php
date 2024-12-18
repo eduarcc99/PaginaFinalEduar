@@ -20,7 +20,9 @@ Route::get('/index', function () {
     return view('index.index');
 })->name('index.index');
 
-
+Route::get('/promociones', function () {
+    return view('promociones.index');
+})->name('promociones.index');
 
 Route::get('/delivery', function () {
     return view('delivery.index');
